@@ -16,7 +16,7 @@ public class ProcesorCompus implements Procesor {
         int res = 0;
 
         for (Procesor procesor : procesoare) {
-            res += procesor.proceseaza(documente);
+            res *= procesor.proceseaza(documente); // aici am modificat adunara cu inmultire
         }
 
         return res;
